@@ -190,7 +190,7 @@ public class MarkdownDataWeaveDocWriterImpl implements DataWeaveDocWriter {
         for(DataWeaveFunction fun : file.getFunctions()) {
             ret += "__fun__ `" + fun.getName() + "` ( " + this.writeFunctArgs(fun) + ")" + System.lineSeparator() + System.lineSeparator();
             ret += this.writeFunctAnnotations(fun) + System.lineSeparator();
-            ret += "> " + Utility.stripNewLines(fun.getComment().getText()) + System.lineSeparator();
+            ret += "> " + Utility.stripNewLines(fun.getComment().getText()) + System.lineSeparator() + System.lineSeparator();
             if (fun.getTable() != null) {
                 ret += writeAnnotationTable(fun.getTable()) + System.lineSeparator();
             }

@@ -1,5 +1,5 @@
 @echo off
-set VERSION=2.0.2
+set VERSION=2.0.3
 set GROUPID=997d5e99-287f-4f68-bc95-ed435d7c5797
 echo Cleaning and building version %VERSION% of the library...
 call mvn clean package -DskipTests
